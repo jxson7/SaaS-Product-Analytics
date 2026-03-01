@@ -1,17 +1,17 @@
  [![CC BY 4.0][cc-by-shield]][cc-by] [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16106711.svg)](https://doi.org/10.5281/zenodo.16106711)
 
- # SaaS Product Analytics
+# SaaS Product Analytics – AI Business Analytics Dashboard
 
- This repository contains my exploratory analysis of Software-as-a-Service (SaaS) pricing models over time.  
- **Owner / maintainer:** GitHub user `jxson7`.
+This repository contains my exploratory **AI business analytics dashboard** for Software-as-a-Service (SaaS) pricing models over time.  
+**Owner / maintainer:** GitHub user `jxson7`.
 
- The analysis focuses on correlating subscription states, feature sets, and pricing across multiple years for a curated set of SaaS products.
+The analysis focuses on correlating subscription states, feature sets, and pricing across multiple years for a curated set of SaaS products, presented in a dashboard-style notebook that walks through data preparation, exploratory analysis, and visualisations.
 
 ## Origin of the data and sources
 
-This project is **inspired by and builds on** the laboratory package available at [`isa-group/SaaS-analysis`](https://github.com/isa-group/SaaS-analysis).
+This project is **inspired by and builds on** the laboratory package available at [`isa-group/SaaS-analysis`](https://github.com/isa-group/SaaS-analysis), as well as end-to-end tutorial-style notebooks such as Kaggle's \"AI Business Analytics Dashboard – Complete Guide\" (used purely as stylistic and structural inspiration for how to present business analytics workflows).
 
-The structure of the dataset, the choice of SaaS products, and some of the analytical ideas are inspired by the laboratory package accompanying the paper:
+The structure of the dataset, the choice of SaaS products, and many of the analytical ideas are inspired by the laboratory package accompanying the paper:
 
  > *"iSubscription: Bridging the Gap Between Contracts and Runtime Access Control in SaaS" (ICSOC 2025)*  
  > DOI: [10.5281/zenodo.16106711](https://doi.org/10.5281/zenodo.16106711)

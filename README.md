@@ -1,106 +1,66 @@
- [![CC BY 4.0][cc-by-shield]][cc-by] [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16106711.svg)](https://doi.org/10.5281/zenodo.16106711)
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
-# SaaS Product Analytics – AI Business Analytics Dashboard
+# AI Business Analytics Dashboard
 
-This repository contains my exploratory **AI business analytics dashboard** for Software-as-a-Service (SaaS) pricing models over time.  
-**Owner / maintainer:** GitHub user `jxson7`.
+🚀 **Introduction**
 
-The analysis focuses on correlating subscription states, feature sets, and pricing across multiple years for a curated set of SaaS products, presented in a dashboard-style notebook that walks through data preparation, exploratory analysis, and visualisations.
+Modern businesses generate massive amounts of data — but **data alone does not create value.**
 
-## Origin of the data and sources
+What truly drives value is:
+- **Clear insights**
+- **Actionable metrics**
+- **Predictive intelligence**
+- **Visual decision-making tools**
 
-This project is **inspired by and builds on** the laboratory package available at [`isa-group/SaaS-analysis`](https://github.com/isa-group/SaaS-analysis), as well as end-to-end tutorial-style notebooks such as Kaggle's \"AI Business Analytics Dashboard – Complete Guide\" (used purely as stylistic and structural inspiration for how to present business analytics workflows).
+An **AI Dashboard** combines data analysis, machine learning, and visualization in a single, interactive interface to help business leaders, analysts, and decision-makers address critical questions like:
+- How are sales performing?
+- Which regions or products drive profit?
+- What trends should we prepare for next?
 
-The structure of the dataset, the choice of SaaS products, and many of the analytical ideas are inspired by the laboratory package accompanying the paper:
+This repository guides you step by step in building a real-world, AI-powered business analytics dashboard pipeline — inspired by [this end-to-end guide on Kaggle](https://www.kaggle.com/code/muhammadrayanshahid/ai-business-analytics-dashboard-complete-guide/notebook).
 
- > *"iSubscription: Bridging the Gap Between Contracts and Runtime Access Control in SaaS" (ICSOC 2025)*  
- > DOI: [10.5281/zenodo.16106711](https://doi.org/10.5281/zenodo.16106711)
+## Features
 
- Where I reuse or adapt data or ideas from that package, they remain subject to the original **CC BY 4.0** license, with full attribution to the original authors. This repository adds my own analysis, code, and figures on top of those ideas.
+- Data preparation and cleaning
+- Exploratory data analysis with clarity
+- Predictive analytics using machine learning
+- Simple, effective business visualizations
+- Real-world inspired metrics and dashboards
 
- ## Studied SaaS and coverage
+## How to use this project
 
- The following SaaS products and years are in scope for the analysis. The symbols indicate the status of each SaaS for the indicated year:
+1. **Install dependencies**
 
- - ✅: The SaaS is modeled for the indicated year.  
- - ✖️: There is a snapshot, but a clear feature list cannot be extracted.  
- - ❌: There isn't a snapshot for the SaaS in the indicated year.
+   All requirements can be installed using:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
- | SaaS          | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 |
- | ------------- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
- | Box           |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Buffer        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Canva         |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | CircleCI      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | ClickUp       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Clockify      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Crowdcast     |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Databox       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Deskera       |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Dropbox       |  ✖️  |  ✖️  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Evernote      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Figma         |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | GitHub        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Hypercontext  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |
- | Jira          |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | MailChimp     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Microsoft 365 |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Notion        |  ✖️  |  ✖️  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Okta          |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | OpenPhone     |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Overleaf      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Planable      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Postman       |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Pumble        |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Quip          |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Salesforce    |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Shopify       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Slack         |  ✅  |  ✅  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |
- | Tableau       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Trello        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Trustmary     |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | UserGuiding   |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Webflow       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Wrike         |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Zenhub        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Zoom          |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
- | Zapier        |  ✅  |  ✅  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |
+2. **Launch the notebook**
 
- **TOTAL:** 240 pricings – 37 SaaS.
+   Open `main.ipynb` using Jupyter, VS Code, or your favorite compatible environment and run the cells step by step.
 
- ## Repository structure (this project)
+3. **Explore!**
 
- This repository currently contains:
+   - Follow along with the analytics pipeline
+   - Inspect interactive charts, performance metrics, and business dashboards
+   - Modify or extend the analysis for your own data
 
- - `data/`: Data files used by the notebook (e.g., SaaS pricing snapshots and derived datasets).  
- - `figures/`: Figures generated from the analysis.  
- - `main.ipynb`: Jupyter notebook that performs the analysis and produces figures.  
- - `requirements.txt`: Python dependencies needed to run the notebook.
+## Repository contents
 
- As the project evolves, additional notebooks, scripts, or configuration files may be added.
+- `data/` – Example datasets for analysis
+- `figures/` – Output charts and dashboards
+- `main.ipynb` – Main, guided analytics notebook
+- `requirements.txt` – All required Python libraries
 
- ## Usage
+---
 
- ### Install dependencies
+## License & Attribution
 
- You can install the Python dependencies with:
+This work builds on open resources and is released under [CC BY 4.0][cc-by].  
+Inspired in part by the Kaggle "AI Business Analytics Dashboard – Complete Guide" by [Muhammad Rayan Shahid](https://www.kaggle.com/code/muhammadrayanshahid/ai-business-analytics-dashboard-complete-guide/notebook).
 
- ```bash
- pip install -r requirements.txt
- ```
+Please attribute both this repository and the Kaggle source if you build on or share derived analyses.
 
- Then open `main.ipynb` in Jupyter, VS Code, or another compatible environment and execute the cells.
-
- ## Licensing and attribution
-
- Unless otherwise noted, my own code and documentation in this repository are provided under the same **CC BY 4.0** terms to remain compatible with the original lab package.
-
- When using this repository or derived results, please:
-
- - Cite the original paper and Zenodo package:  
-   *"iSubscription: Bridging the Gap Between Contracts and Runtime Access Control in SaaS"*, DOI [10.5281/zenodo.16106711](https://doi.org/10.5281/zenodo.16106711).
- - Optionally reference this repository (GitHub user `jxson7`) if you build on the analyses provided here.
-
- [cc-by]: https://creativecommons.org/licenses/by/4.0/
- [cc-by-shield]: https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg
-
+[cc-by]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-shield]: https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg

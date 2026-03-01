@@ -6,4 +6,4 @@ numpy
 pandas
 kagglehub
 faker
-
+termcolor

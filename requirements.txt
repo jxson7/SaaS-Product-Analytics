@@ -4,3 +4,6 @@ adjustText
 seaborn
 numpy
 pandas
+kagglehub
+faker
+

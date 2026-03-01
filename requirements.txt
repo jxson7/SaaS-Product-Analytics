@@ -1,0 +1,6 @@
+matplotlib
+ipython
+adjustText
+seaborn
+numpy
+pandas
